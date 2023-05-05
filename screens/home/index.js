@@ -85,6 +85,7 @@ export default function HomeScreen() {
                 justifyContent: "space-between",
                 alignItems: "center",
                 width: "100%",
+                marginBottom:10
               }}
             >
               <Text style={{ fontWeight: "600", fontSize: 16 }}>
@@ -94,7 +95,9 @@ export default function HomeScreen() {
                 See All
               </Text>
             </View>
+            <View style={{overflow:'scroll', height:500}}>
             <FoodList />
+            </View>
           </View>
 
           <StatusBar style={statusBarStyle} />
@@ -112,6 +115,7 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
   },
   section: {
+    
     paddingTop: 60,
     paddingHorizontal: 20,
     alignItems: "flex-start",

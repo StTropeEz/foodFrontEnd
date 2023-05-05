@@ -72,6 +72,7 @@ const FoodList = () => {
       numColumns={2}
       renderItem={renderItem}
       contentContainerStyle={styles.container}
+      showsVerticalScrollIndicator={false}
     />
   );
 };

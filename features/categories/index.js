@@ -4,23 +4,23 @@ const Categories = () => {
   const categ = [
     {
       name: "Beef",
-      img: "../../assets/images/categories/beef.jpg",
+      img: "https://cdn.rawgit.com/StTropeEz/foodFrontEnd/main/assets/images/categories/beef.jpg",
     },
     {
       name: "Chicken",
-      img: "../../assets/images/categories/chicken2.jpg",
+      img: "https://cdn.rawgit.com/StTropeEz/foodFrontEnd/main/assets/images/categories/chicken.jpg",
     },
     {
       name: "Pork",
-      img: "../../assets/images/categories/pork.jpg",
+      img: "https://cdn.rawgit.com/StTropeEz/foodFrontEnd/main/assets/images/categories/pork.jpg",
     },
     {
       name: "Salad",
-      img: "../../assets/images/categories/pork.jpg",
+      img: "https://cdn.rawgit.com/StTropeEz/foodFrontEnd/main/assets/images/categories/chicken2.jpg",
     },
     {
       name: "Desserts",
-      img: "../../assets/images/categories/pork.jpg",
+      img: "https://cdn.rawgit.com/StTropeEz/foodFrontEnd/main/assets/images/categories/beef2.jpg",
     },
   ];
   return (

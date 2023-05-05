@@ -17,7 +17,7 @@ const MyHorizontalScrollView = ({ direction, content }) => {
     "#E6E6E6", // light gray
   ];
   return (
-    <ScrollView horizontal={direction}>
+    <ScrollView horizontal={direction} showsHorizontalScrollIndicator={false}>
       {content.map((item) => (
         <View
           key={item.name}
@@ -29,7 +29,7 @@ const MyHorizontalScrollView = ({ direction, content }) => {
           <Text style={{ fontWeight: "500", fontSize: 12 }}>{item.name}</Text>
           <View>
             <Image
-              source={require("../../assets/images/categories/pork.jpg")}
+              source={{ uri: item.img }}
               style={{
                 width: 50,
                 height: 50,
