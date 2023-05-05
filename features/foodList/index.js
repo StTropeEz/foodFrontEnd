@@ -9,34 +9,54 @@ import {
 import { useState } from "react";
 const food = [
   {
-    name: "Spaghetti Bolognese",
-    img: "",
+    name: "Spaghetti and Meatballs",
+    img: "https://cdn.rawgit.com/StTropeEz/foodFrontEnd/main/assets/images/categories/spaghettimeatballs.jpg",
     price: 8,
   },
   {
-    name: "Chips and Chicken",
-    img: "",
+    name: "Rice, Chips and Chicken",
+    img: "https://cdn.rawgit.com/StTropeEz/foodFrontEnd/main/assets/images/categories/ricechips.jpg",
     price: 6,
   },
   {
     name: "Steak and Chips",
-    img: "",
+    img: "https://cdn.rawgit.com/StTropeEz/foodFrontEnd/main/assets/images/categories/chicken2.jpg",
     price: 12,
   },
   {
-    name: "Pork and Rice",
-    img: "",
+    name: "Rice and Beef",
+    img: "https://cdn.rawgit.com/StTropeEz/foodFrontEnd/main/assets/images/categories/ricebeef.jpg",
     price: 6,
   },
   {
     name: "Chicken and Salad",
-    img: "",
+    img: "https://cdn.rawgit.com/StTropeEz/foodFrontEnd/main/assets/images/categories/chicken2.jpg",
     price: 4.5,
   },
   {
-    name: "Chicken Caesar Salad",
-    img: "",
+    name: "Chicken Fruit Salad",
+    img: "https://cdn.rawgit.com/StTropeEz/foodFrontEnd/main/assets/images/categories/saladw.jpg",
     price: 8,
+  },
+  {
+    name: "Noodles",
+    img: "https://cdn.rawgit.com/StTropeEz/foodFrontEnd/main/assets/images/categories/noodle.jpg",
+    price: 3,
+  },
+  {
+    name: "Chicken Soup",
+    img: "https://cdn.rawgit.com/StTropeEz/foodFrontEnd/main/assets/images/categories/chickensoup.jpg",
+    price: 3,
+  },
+  {
+    name: "Pork",
+    img: "https://cdn.rawgit.com/StTropeEz/foodFrontEnd/main/assets/images/categories/pork3.jpg",
+    price: 3,
+  },
+  {
+    name: "Beef and Salad",
+    img: "https://cdn.rawgit.com/StTropeEz/foodFrontEnd/main/assets/images/categories/beef2.jpg",
+    price: 3,
   },
 ];
 const FoodList = () => {
@@ -45,7 +65,7 @@ const FoodList = () => {
     return (
       <View key={item.name} style={styles.listItem}>
         <Image
-          source={require("../../assets/images/categories/pork.jpg")}
+        source={{ uri: item.img }}
           style={styles.image}
         />
         <Text style={{ fontWeight: 600, marginTop: 10 }}>{item.name}</Text>
